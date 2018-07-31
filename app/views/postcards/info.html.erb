@@ -3,24 +3,11 @@
       <h2>1.Choose Front</h2>
       <main>      
             <% Front.all.each do |picture| %>
-            <div class="row">
-               <%= radio_button_tag("postcard[front]", picture.image_url) %>
-               <%= label_tag("postcard[front]", picture.name, class: 'frontdesc') %>
-            </div>
-            <div class="row">
                <a href="postcards/new?picture_url=<%= picture.image_url%>">
                <%= image_tag(picture.image_url, class:"frontpic") %>
                </a>
-            </div>
+               <h6 class="frontdesc"><%=picture.name %></h6>
          <% end %>
       </main>
-      <input class="step1" type="submit" name="commit" value="Continue" data-disable-with="Submit">
    </div>
 </div> 
-
-<script type="text/javascript">
-   $('.step1').click(function()
-   {
-      window.location.replace("/info");
-   })
-</script>

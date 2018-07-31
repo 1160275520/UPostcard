@@ -1,5 +1,6 @@
 class PostcardsController < ApplicationController
-   before_action :authenticate_user!
+   before_action :authenticate_user!, except: [:info]
+
 
    def index
       @postcards = Postcard.where(user: current_user.id)
@@ -34,6 +35,7 @@ class PostcardsController < ApplicationController
   end
 
   def info
+      @background_pic = "homepic"
   end
 
   #to prevent SQL injection, for create and update #called strong params 
