@@ -1,0 +1,16 @@
+<div class="main-agileits">
+   <div class="form-w3-agile">
+      <h2 >Use Your Own Photography</h2>
+      <h6 id="editpicture" >1.Edit Your Picture</h6>
+      <p> Recommended size: less than 500MB</p>
+      <p> Recommended dimension: 1875x1275 pixels</p>
+      <a href="https://www.befunky.com/create/resize-image/"><button class="btn btn-outline-light btn-sm button" id="editbutton">Use Befunky To Edit</button></a>
+      <h6 >2.Upload Your Picture</h6>
+      <%= form_for @customfront do |f| %>            
+            <%= f.file_field :image_url %>
+            <input type="submit" name="commit" value="Submit" data-disable-with="Submit">
+      <% end %>
+   </div>
+</div>
+
+

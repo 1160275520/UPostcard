@@ -1,4 +1,33 @@
+// style for uploading custom front picture
+div p
+{
+    color:white;
+    font-size: 80%;
+    margin: 0;
+}
+
+div h6
+{
+    color:darkgrey;
+    margin: 0;
+}
+
+#editpicture
+{
+    margin-bottom: 5%;
+}
+
+
+#editbutton
+{
+    margin: 5%;
+}
+
 // style for choosing front picture
+.form-w3-agile
+{
+    text-align:center;
+}
 
 .frontpic
 {
@@ -9,6 +38,11 @@
 .frontdesc
 {
     color:white;
+}
+
+#custombutton
+{
+    margin-top: 0;
 }
 
 
@@ -42,7 +76,7 @@ form
     text-align: center;  
 }
 
-//other style of index page of pictures
+//other style for index page 
 
 .postcard-img
 {

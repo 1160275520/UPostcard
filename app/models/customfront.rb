@@ -1,0 +1,4 @@
+class Customfront < ApplicationRecord
+end
+
+

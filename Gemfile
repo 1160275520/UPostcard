@@ -8,6 +8,7 @@ gem 'lob'
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 gem 'devise'
+gem 'aws-sdk', '~> 3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -1,13 +1,14 @@
 <div class="main-agileits" id="choosefont">
    <div class="form-w3-agile">
       <h2>1.Choose Front</h2>
-      <main>      
+         <a href="/customfronts/new"><button class="btn btn-outline-light btn-sm button" id="custombutton">Use Your Own Photography</button></a>
+         <main>      
             <% Front.all.each do |picture| %>
                <a href="postcards/new?picture_url=<%= picture.image_url%>">
                <%= image_tag(picture.image_url, class:"frontpic") %>
                </a>
                <h6 class="frontdesc"><%=picture.name %></h6>
-         <% end %>
-      </main>
+            <% end %>
+         </main>
    </div>
 </div> 
