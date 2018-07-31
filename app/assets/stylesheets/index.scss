@@ -1,6 +1,19 @@
+.frontpic
+{
+    width:90%;
+    height: 90%;
+}
+
+.frontdesc
+{
+    color:white;
+    font: lato;
+}
+
+// grid to display picture
 main{
          width: 90%;
-         margin:0 auto;         
+         margin:5% auto;         
          column-width: 220px;         
          column-count: 2;                  
 }
@@ -20,11 +33,14 @@ main:hover a[title]:not(:hover){
          opacity: .7;
 }
 
-
-form {
+      
+form 
+{
     margin-top: 60px;
     text-align: center;  
 }
+
+//
 
 .postcard-img
 {

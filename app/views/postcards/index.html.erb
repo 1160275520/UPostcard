@@ -4,7 +4,7 @@
       <a title="picture">
         <figure>
             <img class="postcard-img" src="<%= postcard.front %>" width="100%">
-            <%= link_to "View", @postcard, :method => :get, class: "btn btn-outline-info btn-sm button" %>
+            <a href="<%= postcard.link %>"><button class="btn btn-outline-info btn-sm button">View</button></a>
             <%= link_to 'Delete', postcard, :method => :delete, class: 'btn btn-outline-dark btn-sm button' %>
         </figure>
       </a>

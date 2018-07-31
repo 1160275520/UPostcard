@@ -1,18 +1,8 @@
-<div class="main-agileits" id="choosefont">
-   <div class="form-w3-agile">
-      <h2>1.Choose Front</h2>
-      <%= form_for @postcard do |f| %>
-      <select class="form-control form-control-lg" name="postcard[front]"><%= options_for_select(Front.all.map{|picture| [picture.name, picture.image_url]}) %></select>
-      <% end %>
-      <input class="step1" type="continue" value="Continue">
-   </div>
-</div> 
-
 <div class="main-agileits" id="infoform">
    <div class="form-w3-agile">
       <%= form_for @postcard do |f| %>
+            <input type="hidden" name="postcard[front]" value="<%= @postcard.front %>">
             <h2>2.To</h2>
-            <select class="form-control form-control-lg" name="postcard[front]"><%= options_for_select(Front.all.map{|picture| [picture.name, picture.image_url]}) %></select>
             <input placeholder="Name" type="text" name="postcard[r_name]" id="postcard_title" value="<%= @postcard.r_name %>">
             <input placeholder="Address 1" type="text" name="postcard[r_address_line1]" id="postcard_author" value="<%= @postcard.r_address_line1 %>">
             <input placeholder="Address 2" type="text" name="postcard[r_address_line2]" id="postcard_courses" value="<%= @postcard.r_address_line2 %>">
@@ -30,15 +20,3 @@
       <% end %>
    </div>
 </div>
-
-<script type="text/javascript">
-$(document).ready(function()
-   {
-      $('#infoform').hide();
-      $('.step1').click(function()
-      {
-         $('#choosefont').hide();
-         $('#infoform').show();
-      });
-   });
-</script>
