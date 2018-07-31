@@ -1,0 +1,7 @@
+Front.find_or_create_by(name:"Capetown: tumult", image_url:"https://s3.amazonaws.com/postcardpicture/fullsizeoutput_291.jpg")
+Front.find_or_create_by(name:"Capetown: sunset", image_url:"https://s3.amazonaws.com/postcardpicture/fullsizeoutput_75.jpg")
+Front.find_or_create_by(name:"Nepal: trek", image_url:"https://s3.amazonaws.com/postcardpicture/fullsizeoutput_e3.jpg")
+Front.find_or_create_by(name:"Nepal: Annapurna Base Camp", image_url:"https://s3.amazonaws.com/postcardpicture/fullsizeoutput_33f.jpg")
+Front.find_or_create_by(name:"Peru Apu Ausangate: pilgrimage", image_url:"https://s3.amazonaws.com/postcardpicture/fullsizeoutput_2de.jpg")
+Front.find_or_create_by(name:"Peru Apu Ausangate: lake", image_url:"https://s3.amazonaws.com/postcardpicture/fullsizeoutput_2b8.jpg")
+Front.find_or_create_by(name:"Peru: Macchu Picchu", image_url:"https://s3.amazonaws.com/postcardpicture/fullsizeoutput_17b.jpg")
