@@ -1,5 +1,8 @@
 <div class="main-agileits" id="infoform">
    <div class="form-w3-agile">
+            <h6 class="warning">Warning:</h6>
+            <h6 class="warning">You have to enter correct U.S. address.</h6>
+            <h6 class="warning">Or you will see error messege! </h6>
       <%= form_for @postcard do |f| %>
             <input type="hidden" name="postcard[front]" value="<%= @postcard.front %>">
             <h2>2.To</h2>
